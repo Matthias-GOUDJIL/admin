@@ -1,0 +1,36 @@
+@import 'variables';
+
+header{
+    background-color: $default-bgc;
+    .header-title{
+        text-align: center;
+        color: $color-default;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: $bigRem;
+    }
+    .menu-nav{
+        background-color: rgba(209, 217, 231, 0.336);
+        color: $color-default;
+        .menu-ul{
+            display: flex;
+            justify-content: flex-end;
+            .menu-item{
+                list-style: none;
+                padding: $normalRem;
+                margin: 0.3 $normalRem;
+                background: rgba(58, 58, 90, 0.63) ;
+                #btn-signIn{
+                    font-size: $mediumRem;
+                    
+                }
+                a{
+                    color: $color-default;
+                    text-decoration: none;
+                    font-size: $mediumRem;
+                    
+                }
+            }
+        }
+    }
+}

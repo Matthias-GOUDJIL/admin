@@ -1,0 +1,22 @@
+@import 'variables';
+
+/**************** general reset ****************/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: $fontFamily-default;
+}
+
+/**************** display ****************/
+
+.hide{
+    display: none !important;
+}
+.hidepop{
+    display: none !important;
+}
+.active{
+    display: block !important;
+}
