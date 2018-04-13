@@ -1,0 +1,24 @@
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px;
+  background: rgba(43, 46, 48, 0.774);
+    .footer-text-container {
+        .footer-text {
+          padding-right: 20px;
+          text-align: center;
+          color: $color-default;
+       
+        }
+    }
+    .footer-links-container {
+      display: flex;
+      justify-content: space-evenly;
+        .footer-links {
+            color: $color-default;
+            font-size: $bigRem;
+            margin: auto;
+
+        }
+    }
+}

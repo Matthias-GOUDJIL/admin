@@ -1,3 +1,4 @@
+@import 'variables';
 /**************** medium device ****************/
 
 @media screen and (max-width: $break-medium) {
@@ -7,99 +8,59 @@
 }
 
 @media screen and (max-width: $break-small) {
-    header {
-        background-color: $default-bgc;
-        .header-title {
-            text-align: center;
-            color: $color-default;
-            text-transform: uppercase;
-            font-weight: 300;
-            font-size: $bigRem/1.5;
-        }
-        .menu-nav {
-            background-color: rgba(209, 217, 231, 0.336);
-            color: $color-default;
-            .menu-ul {
-                display: flex;
-                justify-content: flex-end;
-                .menu-item {
-                    list-style: none;
-                    padding: $normalRem/1.5;
-                    margin: 0.3 $normalRem/1.5;
-                    background: rgba(58, 58, 90, 0.63);
-                    #btn-signIn {
-                        font-size: $mediumRem/1.5;
+    /**************** modal ****************/
+    .modal-section {
+        .modal {
+            /**************** modal-content ****************/
+            .modal-content {
+                margin: 0 auto;
+                width: 100% !important;
+                max-width: 400px;
+                min-width: $break-small;
+
+                /**************** form-login ****************/
+                .form-login {
+                    padding: 1rem;
+                    input {
+                        margin: 0.3rem;
+                        padding: 0.2rem 0.5rem;
+                        font-size: 0.5rem;
+                        width: 100%;
                     }
-                    a {
-                        color: $color-default;
-                        text-decoration: none;
-                        font-size: $mediumRem/1.5;
+                    .btn {
+                        margin: 0.5rem;
+                        display: flex;
+                        button {
+                            color: #fff;
+                            margin: auto;
+                            width: 33%;
+                            border: none;
+                            padding: 0.5rem;
+                            background-color: $default-bgc;
+                        }
+                    }
+                    .inscription {
+                        padding: 2rem 0;
+                        display: flex;
+                        align-items: center;
+                        background-color: rgba(0, 0, 0, 0.616);
+                        p {
+                            margin: auto;
+                            text-align: center;
+                        }
+                        #btn-inscription {
+                            color: #fff;
+                            margin: auto;
+                            border: none;
+                            padding: 0.5rem;
+                            background-color: rgb(173, 96, 96);
+                            text-align: center;
+                        }
                     }
                 }
             }
         }
     }
-}
 
-/**************** modal ****************/
-.modal-section{
-  background: $bgc-img;
-  background-repeat: no-repeat;
-  background-size: cover;
-  .modal {
-      background: rgba(255, 255, 255, 0.438);
-  
-  /**************** modal-content ****************/
-  .modal-content {
-      margin: auto;
-      margin-top: 0;
-      background-color: rgba(78.8%, 78.8%, 78.8%, .8);
-      width: 100%;
-      max-width: 400px;
-      min-width: $break-small;
-      height: auto;
-      box-shadow: 5px 5px 5px rgb(0%, 0%, 0%);
-      /**************** form-login ****************/
-      .form-login {
-          color: #fff;
-          padding: 1rem;
-          input {
-              margin: 0.3rem;
-              padding: 0.2rem 0.5rem;
-              font-size: 0.5rem;
-              width: 100%;
-          }
-          .btn {
-              margin: 0.5rem;
-              display: flex;
-              button {
-                  color: #fff;
-                  margin: auto;
-                  width: 33%;
-                  border: none;
-                  padding: 0.5rem;
-                  background-color: $default-bgc;
-              }
-          }
-          .inscription {
-              padding: 2rem 0;
-              display: flex;
-              align-items: center;
-              background-color: rgba(0, 0, 0, 0.616);
-              p{
-                  margin: auto;
-                  text-align: center;
-              }
-              #btn-inscription {
-                  color: #fff;
-                  margin: auto;
-                  border: none;
-                  padding: 0.5rem;
-                  background-color: rgb(173, 96, 96);
-                  text-align: center;
-              }
-          }
-      }
-  }
-}
+    
 }

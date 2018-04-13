@@ -1,34 +1,67 @@
 @import 'variables';
 
 header{
-    background-color: $default-bgc;
-    .header-title{
-        text-align: center;
-        color: $color-default;
-        text-transform: uppercase;
-        font-weight: 300;
-        font-size: $bigRem;
-    }
-    .menu-nav{
-        background-color: rgba(209, 217, 231, 0.336);
-        color: $color-default;
-        .menu-ul{
+    background-color:  rgba(33, 148, 129, 0.774);
+    .header-content{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        div{
             display: flex;
-            justify-content: flex-end;
-            .menu-item{
-                list-style: none;
+            align-items: center;
+            text-align: center;
+            .title-chevron{
+                color: $color-default;
+                font-size: $bigRem;
                 padding: $normalRem;
-                margin: 0.3 $normalRem;
-                background: rgba(58, 58, 90, 0.63) ;
-                #btn-signIn{
-                    font-size: $mediumRem;
-                    
-                }
-                a{
-                    color: $color-default;
-                    text-decoration: none;
-                    font-size: $mediumRem;
-                    
+            }
+            .header-title{
+                text-align: center;
+                color: $color-default;
+                text-transform: uppercase;
+                font-weight: 300;
+                font-size: $bigRem;
+                padding: $normalRem;
+            }
+        }
+
+        .menu-nav{
+            background-color: rgba(209, 217, 231, 0.336);
+            color: $color-default;
+            .menu-ul{
+                display: flex;
+                justify-content: flex-end;
+                .menu-item{
+                    list-style: none;
+                    margin: 0.3 $normalRem;
+                    display: flex;
+                                       
+                    #btn-signIn, #deconnexion{
+                        font-size: $normalRem;
+                        border: none;
+                        padding: $normalRem/2;
+                        margin: $normalRem/2;
+                        color: $color-default;
+                        background-color:rgba(103, 127, 167, 0.199); 
+                        &:hover{
+                            background: rgba(58, 58, 90, 0.377) ;; 
+                        }
+                    }
+                    a{
+                        color: $color-default;
+                        text-decoration: none;
+                        font-size: $normalRem;
+                        background-color:rgba(103, 127, 167, 0.199); 
+                        padding: $normalRem/2;
+                        margin: auto;
+                        margin-right: $normalRem/2;
+                        &:hover{
+                            background: rgba(58, 58, 90, 0.377) ;; 
+                        }
+                        
+                        
+                    }
                 }
             }
         }

@@ -28,6 +28,6 @@ btn_inscription.addEventListener('click', function () {
   btn_submit.forEach(function(item) {
     item.addEventListener('click', function (e) {
         e.preventDefault();
-        window.location.href="dashboard.html";
+        window.location.href="html/dashboard.html";
     });
   });
