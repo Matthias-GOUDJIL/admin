@@ -297,6 +297,7 @@ header .header-content .menu-nav .menu-ul .menu-item a:hover {
 }
 
 .admin-container .admin-overlay .admin-menu {
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -304,9 +305,11 @@ header .header-content .menu-nav .menu-ul .menu-item a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.37);
 }
 
 .admin-container .admin-overlay .admin-menu a {
+  margin: auto;
   color: #093335;
   font-size: 1.8rem;
   padding: 10px;
@@ -323,9 +326,29 @@ header .header-content .menu-nav .menu-ul .menu-item a:hover {
   transition: all 0.5s;
 }
 
-.admin-container .admin-overlay .admin-article {
-  background: rgba(66, 71, 82, 0.342);
+.admin-container .admin-overlay .charts-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   width: 100%;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: rgba(66, 71, 82, 0.342);
+}
+
+.admin-container .admin-overlay .charts-box .chart-container {
+  margin: auto;
+  background: rgba(66, 71, 82, 0.171);
+  margin: 0.3rem;
+  width: 300px;
+  height: 300px;
 }
 
 footer {
