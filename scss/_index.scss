@@ -1,2 +1,50 @@
 @import 'variables';
+@import 'mediaqueries';
 
+#content{
+    height: 800px;
+    background-image: url(../../assets/images/learning.jpg);
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    #overlay-indexContent{
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.438);
+        display: flex;
+        align-items: center;
+            #content-container{
+                margin: auto;
+                padding: 10%;
+                text-align: center;
+                background: #000;
+                background: rgba(0, 0, 0, 0.637);
+                color: $default-bgc;
+
+            #title-indexContent{
+                text-transform: uppercase;
+                font-weight: 300;
+                padding: $normalRem;
+                margin: $normalRem;
+                background-color: rgba(0, 0, 0, 0.404)
+
+            }
+            #p-indexContent{
+
+            }
+            #btn-learnMore{
+                font-size: $normalRem;
+                border: none;
+                padding: $normalRem/2;
+                margin: $normalRem/2;
+                color: $color-default;
+                background-color: $default-bgc; 
+                &:hover{
+                    color: $default-bgc;
+                    background-color: $color-default;
+                    transition: all 1s;
+            }
+        }
+    }
+}
+}

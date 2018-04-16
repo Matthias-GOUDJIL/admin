@@ -1,11 +1,11 @@
 @import 'variables';
 /**************** modal ****************/
 .modal-section{
-    
     background: $bgc-img;
     background-repeat: no-repeat;
     background-size: cover;
     .modal {
+        height: 100vh;
         padding: 10%;
         padding-left: 0;
         background: rgba(255, 255, 255, 0.438);
