@@ -7,6 +7,7 @@ var btn_sign=           document.getElementById('btn-signIn')
   , btn_submit=         Array.from(document.getElementsByClassName('btn-submit'))
   , index_content=      document.getElementById('content');
 
+// Boutons sign et inscription *****************************************************
 btn_sign.addEventListener('click',  function () {
     modal_sign_in.classList.toggle('hidepop');
     if (!modal_sign_up.classList.contains('hidepop')) {
@@ -20,6 +21,7 @@ btn_inscription.addEventListener('click', function () {
     modal_sign_in.classList.toggle('hidepop');
   });
 
+// Boutons retour et submit *****************************************************  
   btn_retour.forEach(function(item) {
     item.addEventListener('click', function (e) {
         window.location.reload();
@@ -32,5 +34,6 @@ btn_inscription.addEventListener('click', function () {
         window.location.href="html/dashboard.html";
     });
   });
+
 
 
