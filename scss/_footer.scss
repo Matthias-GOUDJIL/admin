@@ -1,11 +1,12 @@
 footer {
   display: flex;
   justify-content: space-evenly;
-  padding: 50px;
-  background: rgba(43, 46, 48, 0.774);
+  padding: 50px 10px;
+  background: rgba(43, 46, 48, 0.925);
     .footer-text-container {
+      display: flex;
         .footer-text {
-          padding-right: 20px;
+          padding: 10px;
           text-align: center;
           color: $color-default;
        
@@ -17,7 +18,7 @@ footer {
         .footer-links {
             color: $color-default;
             font-size: $bigRem;
-            margin: auto;
+            // margin: auto;
 
         }
     }

@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <title>Dashboard admin</title>
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <title>Dashboard admin</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="dist/css/main.min.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1"
-        crossorigin="anonymous">
-
+    crossorigin="anonymous">
+    
 </head>
 
 <body>
-
+    
     <header>
         <div class="header-content">
             <div>
-                <p class="title-chevron">&lt;</p>
+                <p class="title-chevron animated fadeInLeft">&lt;</p>
                 <h1 class="header-title">Formation développeur</h1>
-                <p class="title-chevron">/&gt;</p>
-
+                <p class="title-chevron animated fadeIn">/&gt;</p>
+                
             </div>
+            <img src="assets/images/responsive-web-design.png" alt="responsive">
             <nav class="menu-nav">
                 <ul class="menu-ul">
                     <li class="menu-item">
                         <button id="btn-signIn">sign in</button>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#">about</a>
                     </li>
                 </ul>
             </nav>
@@ -74,29 +74,84 @@
         </div>
     </section>
 
-        <!-- *************** content index  *************** -->
-        <section id="content">
-            <div id="overlay-indexContent">
-                <article id="content-container">
-                    <h1 id="title-indexContent">Découvrez notre formation accessible à tous!</h1>
-                    <p id="p-indexContent">Apprenez les différents langages du Web et créez vos propres applications. </p>
+    <!-- *************** content index  *************** -->
+    <section id="content">
+        <div id="overlay-indexContent">
+            <article id="content-container">
+                <h1 id="title-indexContent">Découvrez notre formation accessible à tous!</h1>
+                <p id="p-indexContent">Apprenez les différents langages du Web et créez vos propres applications. </p>
+                <a href="#about-section">
                     <button id="btn-learnMore">en savoir plus</button>
-                </article>
-            </div>    
+                </a>
+            </article>
+        </div>
+
+        <!-- *************** About-section  *************** -->
+        <section id="about-section">
+            <div class="img-about-container animated fadeInLeft">
+                <img src="assets/images/man-thinking.jpg" alt="man-thinking">
+                <div class="img-overlay">
+                    Profitez de tous les conseils prodigués par nos professeurs
+                </div>
+            </div>
+            <div class="img-about-container animated fadeInLeft">
+                <img src="assets/images/book.jpg" alt="book">
+                <div class="img-overlay">
+                    Pratiquez et laissez cours a votre créativité à travers nos multitudes de projets à réaliser
+                </div>
+            </div>
+            <div class="img-about-container animated fadeInRight">
+                <img src="assets/images/certification.jpg" alt="certification">
+                <div class="img-overlay">
+                    Nos cours certifiés vous permettront d'obtenir des titres reconnus par l'état
+                </div>
+            </div>
+            <div class="img-about-container animated fadeInRight">
+                <img src="assets/images/dictionary.jpg" alt="dictionary">
+                <div class="img-overlay">
+                    Disposez du soutien de nos mentors en ligne et suivez votre progression dans votre espace personnel
+                </div>
+            </div>
         </section>
+
+        <!-- *************** section cours  *************** -->
+        <section id="section-cours">
+            <h1 id="title-cours"> Nos cours</h1>
+            <div id="img-cours-container">
+                <div class="img-box animated fadeInLeft">
+                    <img src="assets/images/html.png" alt="html">
+                </div>
+                <div class="img-box animated fadeInRight">
+                    <img src="assets/images/js.png" alt="js">
+                </div>
+                <div class="img-box animated fadeInRight">
+                    <img src="assets/images/react-logo.png" alt="dictionary">
+                </div>
+                <div class="img-box animated fadeInRight">
+                    <img src="assets/images/nodejs-logo-vector-download.jpg" alt="node">
+                </div>
+            </div>
     
-    <!-- *************** footer  *************** -->    
-    <footer>
+        </section>
+
+        <!-- *************** footer  *************** -->
+        <footer>
             <div class="footer-text-container">
-                <p class="footer-text">page admin créée pendant la formation web chez ARINFO</p>
+                <p class="footer-text">page admin </p>
+                <p class="footer-text">- formation web ARINFO -</p>
+                <p class="footer-text">La Roche-sur-Yon </p>
             </div>
             <div class="footer-links-container">
-                <a class="footer-links" href=""><i class="fab fa-github"></i></a>
-                <a class="footer-links" href=""><i></i></a>
+                <a class="footer-links" href="">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a class="footer-links" href="">
+                    <i></i>
+                </a>
             </div>
         </footer>
 
-    <script src="js/script.js"></script>
+        <script src="js/script.js"></script>
 </body>
 
 </html>

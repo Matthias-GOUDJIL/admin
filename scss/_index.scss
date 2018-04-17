@@ -1,50 +1,132 @@
 @import 'variables';
 @import 'mediaqueries';
-
-#content{
-    height: 800px;
+// Content section **************************************************************
+#content {
+    margin: 50px;
     background-image: url(../../assets/images/learning.jpg);
     background-position: 50% 50%;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    #overlay-indexContent{
-        height: 100%;
-        background-color: rgba(255, 255, 255, 0.438);
+    #overlay-indexContent {
+        padding: 10vh 0;
+        background-color: rgba(253, 253, 253, 0.774);
         display: flex;
+        flex-direction: column;
         align-items: center;
-            #content-container{
-                margin: auto;
-                padding: 10%;
-                text-align: center;
-                background: #000;
-                background: rgba(0, 0, 0, 0.637);
-                color: $default-bgc;
-
-            #title-indexContent{
+        #content-container {
+            margin: auto;
+            padding: 5rem 1rem;
+            text-align: center;
+            background: #000;
+            background: rgba(0, 0, 0, 0.76);
+            color: $default-bgc;
+            #title-indexContent {
                 text-transform: uppercase;
                 font-weight: 300;
                 padding: $normalRem;
                 margin: $normalRem;
                 background-color: rgba(0, 0, 0, 0.404)
-
             }
-            #p-indexContent{
-
+            #p-indexContent {
+                padding: 2rem;
             }
-            #btn-learnMore{
-                font-size: $normalRem;
-                border: none;
-                padding: $normalRem/2;
-                margin: $normalRem/2;
-                color: $color-default;
-                background-color: $default-bgc; 
-                &:hover{
-                    color: $default-bgc;
-                    background-color: $color-default;
-                    transition: all 1s;
+            a{padding: 50px;
+                
+                #btn-learnMore {
+                    font-size: $normalRem;
+                    border: none;
+                    padding: $normalRem/2;
+                    margin: $normalRem/2;
+                    color: $color-default;
+                    background-color: $default-bgc;
+                    &:hover {
+                        color: $default-bgc;
+                        background-color: $color-default;
+                        transition: all 1s;
+                    }
+                }
             }
         }
     }
 }
+
+// About section **************************************************************
+#about-section {
+    background: rgba(255, 255, 255, 0.938);
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .img-about-container {
+        position: relative;
+        height: 340px;
+        width: 340px;
+        margin: 1rem 3rem;
+        &:hover{
+            opacity: 1;
+            transform: scale(1.1);
+            transition: all 1s;
+            
+        }
+        
+        img {
+            display: block;
+            color: #fff;
+            background-color: rgb(0, 0, 0);
+            box-shadow: 7px 7px 3px rgba(0, 0, 0, 0.349);
+            height: 340px;
+            width: 340px;
+            
+        }
+        .img-overlay{ 
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.616);
+            color: #fff;      
+            opacity: 0;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            text-align: center;
+            font-size: 1.2rem;
+            line-height: 2rem;
+            font-weight: 300;
+            padding: 15%;
+            &:hover{
+                transition: .5s ease;
+                opacity: 1;
+            }
+        }
+    }
+    .animated{
+            animation-duration: 5s;
+    }
+}
+
+#section-cours{
+    padding: 2rem;
+    background: #fff;
+    #title-cours{
+        color: #fff;
+        background: rgba(33, 148, 129, 0.61);
+        padding: 1rem;
+        margin: 2rem;
+        font-size: 1.3rem;
+        font-weight: 300;
+        text-align: center;
+        text-transform: uppercase;
+        box-shadow: 5px 5px  rgba(0, 0, 0, 0.377);
+    }
+    #img-cours-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .img-box{
+            img{
+                width: 200px;
+                padding: 2rem;
+            }
+        }
+    }
 }

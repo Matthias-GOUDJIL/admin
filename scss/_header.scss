@@ -12,6 +12,8 @@ header{
             align-items: center;
             text-align: center;
             .title-chevron{
+                font-weight: 700;
+                animation-duration: 5s;
                 color: $color-default;
                 font-size: $bigRem;
                 padding: $normalRem;
@@ -25,7 +27,11 @@ header{
                 padding: $normalRem;
             }
         }
-
+        img{
+            width: 200px;
+            padding: 1rem;
+        }
+        // Menu **************************************************************        
         .menu-nav{
             background-color: rgba(209, 217, 231, 0.336);
             color: $color-default;
@@ -49,20 +55,19 @@ header{
                             transition: all 1s;
                         }
                     }
-                    a{
-                        color: $color-default;
-                        text-decoration: none;
-                        font-size: $normalRem;
-                        background-color:rgba(103, 127, 167, 0.199); 
-                        padding: $normalRem/2;
-                        margin: auto;
-                        margin-right: $normalRem/2;
-                        &:hover{
-                            background: rgb(58, 58, 90) ;
-                            transition: all 1s;
-                        }
-                        }
-                        
+                    // a{
+                    //     color: $color-default;
+                    //     text-decoration: none;
+                    //     font-size: $normalRem;
+                    //     background-color:rgba(103, 127, 167, 0.199); 
+                    //     padding: $normalRem/2;
+                    //     margin: auto;
+                    //     margin-right: $normalRem/2;
+                    //     &:hover{
+                    //         background: rgb(58, 58, 90) ;
+                    //         transition: all 1s;
+                    //         }
+                    //     }
                         
                     }
                 }
