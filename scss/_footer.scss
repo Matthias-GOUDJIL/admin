@@ -3,10 +3,16 @@ footer {
   justify-content: space-evenly;
   padding: 50px 10px;
   background: rgba(43, 46, 48, 0.925);
+  @include breakpoint(small){
+    flex-direction: column;
+  }
     .footer-text-container {
       display: flex;
+      @include breakpoint(small){
+        flex-direction: column;
+      }
         .footer-text {
-          padding: 10px;
+          padding: 30px;
           text-align: center;
           color: $color-default;
        
@@ -18,7 +24,7 @@ footer {
         .footer-links {
             color: $color-default;
             font-size: $bigRem;
-            // margin: auto;
+            margin: auto;
 
         }
     }

@@ -30,26 +30,6 @@
 /**************** fonts ****************/
 /**************** assets ****************/
 /**************** media queries ****************/
-/**************** medium device ****************/
-@media screen and (max-width: 800px) {
-  .admin-overlay {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .admin-menu {
-    height: 50px !important;
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-flow: row nowrap !important;
-            flex-flow: row nowrap !important;
-  }
-}
-
 /**************** colors ****************/
 /**************** background-colors ****************/
 /**************** fonts ****************/
@@ -63,7 +43,7 @@
 }
 
 .modal-section .modal {
-  padding: 10vh 0 50vh 0;
+  padding: 10vh 0 60vh 0;
   padding-left: 0;
   background: rgba(255, 255, 255, 0.438);
   /**************** modal-content ****************/
@@ -185,6 +165,12 @@ header .header-content div .header-title {
   padding: 1rem;
 }
 
+@media (max-width: 320px) {
+  header .header-content div .header-title {
+    font-size: 1.3rem;
+  }
+}
+
 header .header-content img {
   width: 200px;
   padding: 1rem;
@@ -238,14 +224,32 @@ footer {
   background: rgba(43, 46, 48, 0.925);
 }
 
+@media (max-width: 320px) {
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 footer .footer-text-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
+@media (max-width: 320px) {
+  footer .footer-text-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 footer .footer-text-container .footer-text {
-  padding: 10px;
+  padding: 30px;
   text-align: center;
   color: #fff;
 }
@@ -262,6 +266,7 @@ footer .footer-links-container {
 footer .footer-links-container .footer-links {
   color: #fff;
   font-size: 1.8rem;
+  margin: auto;
 }
 
 /**************** colors ****************/
@@ -274,33 +279,18 @@ footer .footer-links-container .footer-links {
 /**************** fonts ****************/
 /**************** assets ****************/
 /**************** media queries ****************/
-/**************** medium device ****************/
-@media screen and (max-width: 800px) {
-  .admin-overlay {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .admin-menu {
-    height: 50px !important;
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-flow: row nowrap !important;
-            flex-flow: row nowrap !important;
-  }
-}
-
 #content {
-  margin: 50px;
   background-image: url(../../assets/images/learning.jpg);
   background-position: 50% 50%;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  #content {
+    margin: 50px;
+  }
 }
 
 #content #overlay-indexContent {
@@ -425,7 +415,6 @@ footer .footer-links-container .footer-links {
 }
 
 #section-cours {
-  padding: 2rem;
   background: #fff;
 }
 
@@ -433,7 +422,6 @@ footer .footer-links-container .footer-links {
   color: #fff;
   background: rgba(33, 148, 129, 0.61);
   padding: 1rem;
-  margin: 2rem;
   font-size: 1.3rem;
   font-weight: 300;
   text-align: center;
@@ -469,6 +457,15 @@ footer .footer-links-container .footer-links {
   display: flex;
 }
 
+@media (max-width: 320px) {
+  .admin-container .admin-overlay {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .admin-container .admin-overlay .admin-menu {
   height: 100vh;
   display: -webkit-box;
@@ -482,6 +479,19 @@ footer .footer-links-container .footer-links {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 320px) {
+  .admin-container .admin-overlay .admin-menu {
+    height: 50px !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-flow: row nowrap !important;
+            flex-flow: row nowrap !important;
+  }
 }
 
 .admin-container .admin-overlay .admin-menu a {

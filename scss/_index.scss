@@ -2,12 +2,14 @@
 @import 'mediaqueries';
 // Content section **************************************************************
 #content {
-    margin: 50px;
     background-image: url(../../assets/images/learning.jpg);
     background-position: 50% 50%;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+    @include breakpoint (large){
+        margin: 50px;
+    }
     #overlay-indexContent {
         padding: 10vh 0;
         background-color: rgba(253, 253, 253, 0.774);
@@ -105,13 +107,11 @@
 }
 
 #section-cours{
-    padding: 2rem;
     background: #fff;
     #title-cours{
         color: #fff;
         background: rgba(33, 148, 129, 0.61);
         padding: 1rem;
-        margin: 2rem;
         font-size: 1.3rem;
         font-weight: 300;
         text-align: center;
