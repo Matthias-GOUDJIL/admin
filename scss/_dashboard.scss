@@ -2,12 +2,20 @@
 .admin-container {
     .admin-overlay {
         display: flex;
+        @include breakpoint (small){
+            flex-direction: column;
+        }
         .admin-menu {
             height: 100vh;
             display: flex;
             flex-direction: column;
             background-color: rgb(255, 255, 255);
             justify-content: center;
+            @include breakpoint (small) {
+                height: 50px !important;
+                display: flex !important;
+                flex-flow: row nowrap !important;
+            }
             a {
                 display: flex;
                 text-align: center;

@@ -25,6 +25,10 @@ header{
                 font-weight: 300;
                 font-size: $bigRem;
                 padding: $normalRem;
+                @include breakpoint (small){
+                    font-size: $mediumRem;
+
+                }
             }
         }
         img{
