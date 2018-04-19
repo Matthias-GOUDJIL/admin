@@ -3,27 +3,26 @@
         max-width: 300px !important;
         display: flex;
         flex-direction: column;
+        align-items: center;
         #screen_input {
             width: 85%;
-            height: 60px;
-            margin: 5% 0;
             font-size: 3rem;
             text-align: right;
-            padding: 0 5%;
+            padding: 5%;
             box-shadow: -3px -3px rgb(20, 20, 20);
-            border: none;
             border-radius: 3px;
-            font-family: 'VT323', monospace;
+            // font-family: 'VT323', monospace;
             font-weight: 300;
             background: linear-gradient(-90deg, rgba(255, 255, 255, 0), white, rgb(230, 228, 228));
-            color: transparent;
             text-shadow: 0 0 0.5px #05223a;
+            
             &:focus {
                 outline: none;
             }
         }
         div {
             display: flex;
+            margin-top: 1rem;
             #digits {
                 display: flex;
                 justify-content: center;

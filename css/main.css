@@ -560,16 +560,28 @@ footer .footer-links-container .footer-links {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 10000px;
+  height: 100vh;
 }
 
 .content .gadget-overlay {
-  padding: 10vh 0;
   background-color: rgba(253, 253, 253, 0.774);
-  height: 100000px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .content .gadget-overlay #container {
+  margin: 1rem;
+  min-width: 300px;
   background-color: #8b8a86;
   background: linear-gradient(-45deg, #424040, #d8cfcf, #706767);
   -webkit-box-shadow: 5px 5px #333131;
@@ -649,24 +661,22 @@ footer .footer-links-container .footer-links {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #calculator #container #screen_input {
   width: 85%;
-  height: 60px;
-  margin: 5% 0;
   font-size: 3rem;
   text-align: right;
-  padding: 0 5%;
+  padding: 5%;
   -webkit-box-shadow: -3px -3px #141414;
           box-shadow: -3px -3px #141414;
-  border: none;
   border-radius: 3px;
-  font-family: 'VT323', monospace;
   font-weight: 300;
   background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0)), color-stop(white), to(#e6e4e4));
   background: linear-gradient(-90deg, rgba(255, 255, 255, 0), white, #e6e4e4);
-  color: transparent;
   text-shadow: 0 0 0.5px #05223a;
 }
 
@@ -678,6 +688,7 @@ footer .footer-links-container .footer-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 1rem;
 }
 
 #calculator #container div #digits {
@@ -738,5 +749,18 @@ footer .footer-links-container .footer-links {
   background-color: #fdfeff;
   -webkit-box-shadow: 0 0 0 #fff;
           box-shadow: 0 0 0 #fff;
+}
+
+#clock #container {
+  max-width: 300px !important;
+}
+
+#clock #container p {
+  color: #fff;
+  font-size: 3.2rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 /*# sourceMappingURL=main.css.map */

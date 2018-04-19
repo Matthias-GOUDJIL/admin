@@ -12,16 +12,17 @@
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 10000px;
+    height: 100vh;
     .gadget-overlay {
-        padding: 10vh 0;
         background-color: rgba(253, 253, 253, 0.774);
-        height: 100000px ;
-        // display: flex;
-        // flex-direction: column;
-        // align-items: center;
-
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
         #container {
+            margin: 1rem;
+            min-width: 300px;
             background-color: rgb(139, 138, 134);
             background: linear-gradient(-45deg, rgb(66, 64, 64), rgb(216, 207, 207), rgb(112, 103, 103));
             box-shadow: 5px 5px rgb(51, 49, 49);
