@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo List</title>
+
+    <link rel="stylesheet" href="../dist/css/main.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <div>
+                <p class="title-chevron">&lt;</p>
+                <h1 class="header-title">Formation développeur</h1>
+                <p class="title-chevron">/&gt;</p>
+
+            </div>
+
+            <!-- Menu ************************************************************************************** -->
+            <nav class="menu-nav">
+                <ul class="menu-ul">
+                    <li class="menu-item">
+                        <button id="btn-deconnexion">retour</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="content">
+
+        <div class="gadget-overlay">
+            
+            <!-- Todo-List ************************************************************************************** -->
+            <div class="container" id="container">
+                <h1 id="title">Todo List</h1>
+                <form id="todo-form">
+                    <input id="todo-input" type="text" placeholder="chose à faire">
+                    <ul id="list">
+                    </ul>
+                </form>
+            </div>
+        
+            <!-- Calculator ************************************************************************************** -->
+        
+            <div id="calculator">
+                 <div class="container" id="container">
+                    <h1 id="title">calculator</h1>
+                    <input id="screen_input" type="text">
+                    <div>
+                        <div id="digits"></div>
+                        <div id="operators"></div>
+                    </div>
+                </div>
+            </div> 
+    
+        </div>
+
+    </div>
+    
+
+    <script src="../js/gadgets.js"></script>
+    <script src="../js/todo.js"></script>
+    <script src="../js/calculator.js"></script>
+    <script src="../js/drag.js"></script>
+</body>
+
+</html>

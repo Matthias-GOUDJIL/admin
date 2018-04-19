@@ -1,0 +1,68 @@
+#calculator{
+    #container {
+        max-width: 300px !important;
+        display: flex;
+        flex-direction: column;
+        #screen_input {
+            width: 85%;
+            height: 60px;
+            margin: 5% 0;
+            font-size: 3rem;
+            text-align: right;
+            padding: 0 5%;
+            box-shadow: -3px -3px rgb(20, 20, 20);
+            border: none;
+            border-radius: 3px;
+            font-family: 'VT323', monospace;
+            font-weight: 300;
+            background: linear-gradient(-90deg, rgba(255, 255, 255, 0), white, rgb(230, 228, 228));
+            color: transparent;
+            text-shadow: 0 0 0.5px #05223a;
+            &:focus {
+                outline: none;
+            }
+        }
+        div {
+            display: flex;
+            #digits {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap; // margin: 0 auto;
+                button {
+                    border: none;
+                    border-radius: 8px;
+                    font-size: 1.3rem;
+                    height: 50px;
+                    width: 50px;
+                    margin: 3px;
+                    box-shadow: 3px 3px rgb(68, 67, 67);
+                    text-shadow: 0 0 .5px rgb(68, 67, 67);
+                    &:hover {
+                        background-color: #fdfeff;
+                        box-shadow: 0 0 0 #fff;
+                    }
+                }
+            }
+            #operators {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                button {
+                    border: none;
+                    border-radius: 8px;
+                    text-align: center;
+                    font-size: 1rem;
+                    height: 35px;
+                    width: 35px;
+                    margin: 4px;
+                    box-shadow: 3px 3px rgb(68, 67, 67);
+                    text-shadow: 0 0 .5px rgb(68, 67, 67);
+                    &:hover {
+                        background-color: #fdfeff;
+                        box-shadow: 0 0 0 #fff;
+                    }
+                }
+            }
+        }
+    }
+}
