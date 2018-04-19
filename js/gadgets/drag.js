@@ -1,7 +1,6 @@
-//Drag'n'Drop
-
-var container = Array.from(document.getElementsByClassName('container'));
-var zindex_increment = 0;
+//Drag'n'Drop *********************************************************************************
+var container = Array.from(document.getElementsByClassName('container'))
+  , zindex_increment = 0;
 
 var move = function (event) {
     var posX = event.pageX;

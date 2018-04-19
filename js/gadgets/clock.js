@@ -1,3 +1,4 @@
+
 var clock = document.getElementById('display-clock');
 
 setInterval(function () {

@@ -198,7 +198,8 @@ header .header-content .menu-nav .menu-ul .menu-item {
   display: flex;
 }
 
-header .header-content .menu-nav .menu-ul .menu-item #btn-signIn, header .header-content .menu-nav .menu-ul .menu-item #btn-deconnexion {
+header .header-content .menu-nav .menu-ul .menu-item #btn-signIn,
+header .header-content .menu-nav .menu-ul .menu-item #btn-deconnexion {
   font-size: 1rem;
   border: none;
   padding: 0.5rem;
@@ -207,7 +208,8 @@ header .header-content .menu-nav .menu-ul .menu-item #btn-signIn, header .header
   background-color: rgba(103, 127, 167, 0.199);
 }
 
-header .header-content .menu-nav .menu-ul .menu-item #btn-signIn:hover, header .header-content .menu-nav .menu-ul .menu-item #btn-deconnexion:hover {
+header .header-content .menu-nav .menu-ul .menu-item #btn-signIn:hover,
+header .header-content .menu-nav .menu-ul .menu-item #btn-deconnexion:hover {
   background: #3a3a5a;
   -webkit-transition: all 1s;
   transition: all 1s;
@@ -221,7 +223,7 @@ footer {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   padding: 50px 10px;
-  background: rgba(43, 46, 48, 0.925);
+  background: rgba(27, 28, 29, 0.966);
 }
 
 @media (max-width: 320px) {
@@ -294,7 +296,7 @@ footer .footer-links-container .footer-links {
 }
 
 #content #overlay-indexContent {
-  padding: 10vh 0;
+  padding: 5vh 0;
   background-color: rgba(253, 253, 253, 0.774);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -451,14 +453,25 @@ footer .footer-links-container .footer-links {
 /**************** fonts ****************/
 /**************** assets ****************/
 /**************** media queries ****************/
-.admin-container .admin-overlay {
+.bg-overlay {
+  background-image: url(../../assets/images/learning.jpg);
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.bg-overlay .admin-container .admin-overlay {
+  background-color: rgba(253, 253, 253, 0.89);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-height: 100vh;
 }
 
 @media (max-width: 320px) {
-  .admin-container .admin-overlay {
+  .bg-overlay .admin-container .admin-overlay {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -466,8 +479,7 @@ footer .footer-links-container .footer-links {
   }
 }
 
-.admin-container .admin-overlay .admin-menu {
-  height: 100vh;
+.bg-overlay .admin-container .admin-overlay .admin-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -482,8 +494,8 @@ footer .footer-links-container .footer-links {
 }
 
 @media (max-width: 320px) {
-  .admin-container .admin-overlay .admin-menu {
-    height: 50px !important;
+  .bg-overlay .admin-container .admin-overlay .admin-menu {
+    max-height: 50px !important;
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
@@ -494,7 +506,7 @@ footer .footer-links-container .footer-links {
   }
 }
 
-.admin-container .admin-overlay .admin-menu a {
+.bg-overlay .admin-container .admin-overlay .admin-menu a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -508,7 +520,7 @@ footer .footer-links-container .footer-links {
   padding: 10px;
 }
 
-.admin-container .admin-overlay .admin-menu a:hover {
+.bg-overlay .admin-container .admin-overlay .admin-menu a:hover {
   color: #fff;
   background: #219481;
   -webkit-transform: scale(1.5);
@@ -517,11 +529,11 @@ footer .footer-links-container .footer-links {
   transition: all 0.6s;
 }
 
-.admin-container .admin-overlay .admin-menu a i {
+.bg-overlay .admin-container .admin-overlay .admin-menu a i {
   margin: auto;
 }
 
-.admin-container .admin-overlay .charts-box {
+.bg-overlay .admin-container .admin-overlay .charts-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -538,20 +550,12 @@ footer .footer-links-container .footer-links {
   background: rgba(66, 71, 82, 0.096);
 }
 
-.admin-container .admin-overlay .charts-box .chart-container {
+.bg-overlay .admin-container .admin-overlay .charts-box .chart-container {
   margin: auto;
-  background: rgba(66, 71, 82, 0.171);
+  background: rgba(66, 71, 82, 0.329);
   margin: 0.3rem;
   width: 300px;
   height: 300px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 300;
-  text-transform: uppercase;
 }
 
 .content {
@@ -560,12 +564,13 @@ footer .footer-links-container .footer-links {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  min-height: 100vh;
+  text-transform: uppercase;
 }
 
 .content .gadget-overlay {
   background-color: rgba(253, 253, 253, 0.774);
-  height: 100%;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -590,6 +595,7 @@ footer .footer-links-container .footer-links {
 }
 
 .content .gadget-overlay #container #title {
+  font-weight: 300;
   color: #fff;
   padding-bottom: 20px;
   text-align: center;
@@ -600,52 +606,13 @@ footer .footer-links-container .footer-links {
           user-select: none;
 }
 
-.content .gadget-overlay #container #todo-form {
-  text-align: center;
+#clock #container {
+  max-width: 300px !important;
 }
 
-.content .gadget-overlay #container #todo-form #todo-input {
-  font-size: 1.2rem;
-  width: 80%;
-  margin-bottom: 0.8rem;
-  padding: 10px;
-  border: none;
-}
-
-.content .gadget-overlay #container #todo-form #todo-input:focus {
-  outline: none;
-  -webkit-box-shadow: 3px 3px 0 #3f3d3d;
-          box-shadow: 3px 3px 0 #3f3d3d;
-}
-
-.content .gadget-overlay #container #todo-form #list {
-  list-style: none;
-  margin: 0.3rem;
-}
-
-.content .gadget-overlay #container #todo-form #list li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border-radius: 5px;
-  background-color: #fff;
-  padding: 0.5rem;
-  margin: 3px 0;
-}
-
-.content .gadget-overlay #container #todo-form #list li textarea {
-  color: #5a5555;
-  border: none;
-  width: 100%;
-}
-
-.content .gadget-overlay #container #todo-form #list li button {
-  font-size: 1.5rem;
-  padding: 10px;
-  font-weight: 700;
-  background-color: #fff;
-  color: #bd3b3b;
-  border: none;
+#clock #container p {
+  color: #fff;
+  font-size: 3.2rem;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -751,13 +718,52 @@ footer .footer-links-container .footer-links {
           box-shadow: 0 0 0 #fff;
 }
 
-#clock #container {
-  max-width: 300px !important;
+#todo-form {
+  text-align: center;
 }
 
-#clock #container p {
-  color: #fff;
-  font-size: 3.2rem;
+#todo-form #todo-input {
+  font-size: 1.2rem;
+  width: 80%;
+  margin-bottom: 0.8rem;
+  padding: 10px;
+  border: none;
+}
+
+#todo-form #todo-input:focus {
+  outline: none;
+  -webkit-box-shadow: 3px 3px 0 #3f3d3d;
+          box-shadow: 3px 3px 0 #3f3d3d;
+}
+
+#todo-form #list {
+  list-style: none;
+  margin: 0.3rem;
+}
+
+#todo-form #list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 0.5rem;
+  margin: 3px 0;
+}
+
+#todo-form #list li textarea {
+  color: #5a5555;
+  border: none;
+  width: 100%;
+}
+
+#todo-form #list li button {
+  font-size: 1.5rem;
+  padding: 10px;
+  font-weight: 700;
+  background-color: #fff;
+  color: #bd3b3b;
+  border: none;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;

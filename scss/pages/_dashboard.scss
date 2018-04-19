@@ -1,19 +1,29 @@
-@import 'variables';
+@import '../general/variables';
+
+.bg-overlay{
+    background-image: url(../../assets/images/learning.jpg);
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
 
 .admin-container {
+
     .admin-overlay {
+        background-color: rgba(253, 253, 253, 0.89);
         display: flex;
-        @include breakpoint (small){
+        min-height: 100vh;
+        @include breakpoint (small) {
             flex-direction: column;
         }
         .admin-menu {
-            height: 100vh;
             display: flex;
             flex-direction: column;
             background-color: rgb(255, 255, 255);
             justify-content: center;
             @include breakpoint (small) {
-                height: 50px !important;
+                max-height: 50px !important;
                 display: flex !important;
                 flex-flow: row nowrap !important;
             }
@@ -22,18 +32,16 @@
                 text-align: center;
                 flex-grow: 1;
                 margin: auto;
-                
                 color: rgba(33, 148, 129, 0.767);
                 font-size: $bigRem;
                 padding: 10px;
                 &:hover {
                     color: $color-default;
-                    background: rgb(33, 148, 129);
-                    // padding-left: 25px;
+                    background: rgb(33, 148, 129); // padding-left: 25px;
                     transform: scale( 1.5);
                     transition: all 0.6s;
                 }
-                i{
+                i {
                     margin: auto;
                 }
             }
@@ -48,13 +56,12 @@
             background: rgba(66, 71, 82, 0.096);
             .chart-container {
                 margin: auto;
-                background: rgba(66, 71, 82, 0.171);
+                background: rgba(66, 71, 82, 0.329);
                 margin: 0.3rem;
                 width: 300px;
                 height: 300px;
-            
             }
-            
         }
     }
+}
 }

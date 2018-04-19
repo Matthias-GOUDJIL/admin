@@ -1,0 +1,39 @@
+#todo-form {
+    text-align: center;
+    #todo-input {
+        font-size: 1.2rem;
+        width: 80%;
+        margin-bottom: 0.8rem;
+        padding: 10px;
+        border: none;
+        &:focus {
+            outline: none;
+            box-shadow: 3px 3px 0 rgb(63, 61, 61);
+        }
+    }
+    #list {
+        list-style: none;
+        margin: 0.3rem;
+        li {
+            display: flex;
+            border-radius: 5px;
+            background-color: #fff;
+            padding: 0.5rem;
+            margin: 3px 0;
+            textarea {
+                color: rgb(90, 85, 85);
+                border: none;
+                width: 100%;
+            }
+            button {
+                font-size: 1.5rem;
+                padding: 10px;
+                font-weight: 700;
+                background-color: #fff;
+                color: rgb(189, 59, 59);
+                border: none;
+                user-select: none;
+            }
+        }
+    }
+}

@@ -1,6 +1,6 @@
 @import 'variables';
 
-// MIXIN *****************************************
+// Mixin ****************************************************************************
 @mixin breakpoint($point) {
   @if $point == small {
     @media (max-width: 320px) { @content; }

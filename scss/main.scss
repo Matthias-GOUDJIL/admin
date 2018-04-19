@@ -1,10 +1,15 @@
-@import 'generics';
-@import 'mediaqueries';
-@import 'modal';
-@import 'header';
-@import 'footer';
-@import 'index';
-@import 'dashboard';
-@import 'gadgets';
-@import 'calculator';
-@import 'clock';
+// General ****************************************************************************
+@import 'general/generics';
+@import 'general/mediaqueries';
+// Elements ****************************************************************************
+@import 'elements/modal';
+@import 'elements/header';
+@import 'elements/footer';
+// Pages ****************************************************************************
+@import 'pages/index';
+@import 'pages/dashboard';
+@import 'pages/gadgets';
+// Gadgets ****************************************************************************
+@import 'gadgets/clock';
+@import 'gadgets/calculator';
+@import 'gadgets/todolist';

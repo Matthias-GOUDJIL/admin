@@ -1,15 +1,15 @@
-// Elements DOM
-var container = document.getElementById('container');
-var list_container = document.getElementById('list');
-var todo_form = document.getElementById('todo-form');
-var todo_input = document.getElementById('todo-input');
-var delete_btn_group = [];
-var text_area_group = [];
+// Elements DOM *****************************************************************************
+var container = document.getElementById('container')
+  , list_container = document.getElementById('list')
+  , todo_form = document.getElementById('todo-form')
+  , todo_input = document.getElementById('todo-input')
+  , delete_btn_group = []
+  , text_area_group = [];
 
-// Ajout éléments dans la Todo-List
+// Ajout éléments dans la Todo-List **********************************************************
 todo_form.addEventListener('submit', function (e) {
-    var li = document.createElement('li');
-    var text_node = document.createTextNode(todo_input.value);
+    var li = document.createElement('li')
+      , text_node = document.createTextNode(todo_input.value);
 
     var text_area = document.createElement('textarea');
     text_area_group.push(text_area);

@@ -1,26 +1,21 @@
 /**************** colors ****************/
-
 $color-default: #fff;
 $color-title:rgb(13%, 58.1%, 50.9%);
 
 /**************** background-colors ****************/
-
 $default-bgc: rgb(13%, 58.1%, 50.9%);
 $header-bgc: #000;
 
 /**************** fonts ****************/
-
 $fontFamily-default: 'ubuntu', sans-serif;
 $normalRem: 1rem;
 $mediumRem: 1.3rem;
 $bigRem: 1.8rem;
 
 /**************** assets ****************/
-
 $bgc-img: url('../../assets/images/learning.jpg');
 
 /**************** media queries ****************/
-
 $break-small: 320px;
 $break-medium: 800px;
 $break-large: 1200px;

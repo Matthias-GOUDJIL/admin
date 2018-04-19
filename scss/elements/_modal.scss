@@ -1,0 +1,65 @@
+@import '../general/variables';
+
+/**************** modal ****************/
+
+.modal-section {
+    background: $bgc-img;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .modal {
+        padding: 10vh 0 60vh 0;
+        padding-left: 0;
+        background: rgba(255, 255, 255, 0.438);
+        /**************** modal-content ****************/
+        .modal-content {
+            margin: 0 auto;
+            background-color: rgba(78.8%, 78.8%, 78.8%, .8);
+            width: 50%;
+            max-width: 400px;
+            min-width: $break-small;
+            height: auto;
+            box-shadow: 5px 5px 5px rgb(0%, 0%, 0%);
+            /**************** form-login ****************/
+            .form-login {
+                color: #fff;
+                padding: 1rem;
+                text-align: center;
+                input {
+                    text-align: center;
+                    font-size: 1.2rem;
+                    width: 90%;
+                }
+                .btn {
+                    margin: 0.5rem;
+                    display: flex;
+                    button {
+                        color: #fff;
+                        margin: auto;
+                        width: 33%;
+                        border: none;
+                        padding: 0.7rem;
+                        background-color: $default-bgc;
+                    }
+                }
+                .inscription {
+                    padding: 2rem 0;
+                    display: flex;
+                    align-items: center;
+                    background-color: rgba(0, 0, 0, 0.616);
+                    p {
+                        margin: auto;
+                        text-align: center;
+                    }
+                    #btn-inscription {
+                        color: #fff;
+                        margin: auto;
+                        border: none;
+                        padding: 0.6rem;
+                        background-color: rgb(173, 96, 96);
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

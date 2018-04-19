@@ -1,80 +1,66 @@
-@import 'variables';
+@import '../general/variables';
 
-header{
-    background-color:  rgba(33, 148, 129, 0.774);
-    .header-content{
+header {
+    background-color: rgba(33, 148, 129, 0.774);
+    .header-content {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        div{
+        div {
             display: flex;
             align-items: center;
             text-align: center;
-            .title-chevron{
+            .title-chevron {
                 font-weight: 700;
                 animation-duration: 5s;
                 color: $color-default;
                 font-size: $bigRem;
                 padding: $normalRem;
             }
-            .header-title{
+            .header-title {
                 text-align: center;
                 color: $color-default;
                 text-transform: uppercase;
                 font-weight: 300;
                 font-size: $bigRem;
                 padding: $normalRem;
-                @include breakpoint (small){
+                @include breakpoint (small) {
                     font-size: $mediumRem;
-
                 }
             }
         }
-        img{
+        img {
             width: 200px;
-            padding: 1rem;
-        }
+            padding: 1rem;          
+        } 
+        
         // Menu **************************************************************        
-        .menu-nav{
+        .menu-nav {
             background-color: rgba(209, 217, 231, 0.336);
             color: $color-default;
-            .menu-ul{
+            .menu-ul {
                 display: flex;
                 justify-content: flex-end;
-                .menu-item{
+                .menu-item {
                     list-style: none;
                     margin: 0.3 $normalRem;
                     display: flex;
-                                       
-                    #btn-signIn, #btn-deconnexion{
+                    #btn-signIn,
+                    #btn-deconnexion {
                         font-size: $normalRem;
                         border: none;
                         padding: $normalRem/2;
                         margin: $normalRem/2;
                         color: $color-default;
-                        background-color:rgba(103, 127, 167, 0.199); 
-                        &:hover{
-                            background: rgb(58, 58, 90) ;
+                        background-color: rgba(103, 127, 167, 0.199);
+                        &:hover {
+                            background: rgb(58, 58, 90);
                             transition: all 1s;
                         }
-                    }
-                    // a{
-                    //     color: $color-default;
-                    //     text-decoration: none;
-                    //     font-size: $normalRem;
-                    //     background-color:rgba(103, 127, 167, 0.199); 
-                    //     padding: $normalRem/2;
-                    //     margin: auto;
-                    //     margin-right: $normalRem/2;
-                    //     &:hover{
-                    //         background: rgb(58, 58, 90) ;
-                    //         transition: all 1s;
-                    //         }
-                    //     }
-                        
                     }
                 }
             }
         }
     }
+}

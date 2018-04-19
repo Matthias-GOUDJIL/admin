@@ -2,7 +2,7 @@ footer {
   display: flex;
   justify-content: space-evenly;
   padding: 50px 10px;
-  background: rgba(43, 46, 48, 0.925);
+  background: rgba(27, 28, 29, 0.966);
   @include breakpoint(small){
     flex-direction: column;
   }
