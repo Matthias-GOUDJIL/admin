@@ -1,10 +1,21 @@
 #clock {
     #container {
         max-width: 300px !important;
-        p {
+        #display-day {
             color: #fff;
-            font-size: 3.2rem;
+            font-weight: 300;
+            text-align: center;
             user-select: none;
+            cursor: pointer;
+            font-size: 1.4rem;
+        }
+        #display-clock {
+            color: #fff;
+            font-weight: 300;
+            text-align: center;
+            user-select: none;
+            cursor: pointer;
+            font-size: 2.5rem;
         }
     }
 }

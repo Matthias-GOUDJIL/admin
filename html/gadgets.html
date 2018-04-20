@@ -40,8 +40,8 @@
             <!-- Horloge ************************************************************************************** -->
             <div id="clock">
                 <div class="container" id="container">
-                    <h1 id="title">Horloge</h1>
-                    <p id="display-clock">13 : 13 : 13</p>
+                    <p id="display-day"></p>
+                    <p id="display-clock"></p>
                 </div>
             </div>
 
@@ -67,14 +67,42 @@
                 </div>
             </div>
 
-        </div>
+            <!-- Letter Count ************************************************************************************** -->
+            <div id="lettercount">
+                <div class="container" id="container">
+                    <h1 id="title">Letter Count</h1>
+                    <form id="lettercount-form">
+                        <input id="lettercount-input" type="text">
+                        <button id="lettercount-btn" type="submit">OK</button>
+                        <button id="lettercount-reset" type="reset">del</button>
+                    </form>
+                    <p id="count"></p>
+                </div>
+
+            </div>
+
     </div>
+
+    <!-- *************** footer  *************** -->
+    <footer>
+        <div class="footer-text-container">
+            <p class="footer-text">page admin </p>
+            <p class="footer-text">- formation web ARINFO -</p>
+            <p class="footer-text">La Roche-sur-Yon </p>
+        </div>
+        <div class="footer-links-container">
+            <a class="footer-links" href="">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </footer>
 
     <script src="../js/gadgets/gadgets.js"></script>
     <script src="../js/gadgets/drag.js"></script>
     <script src="../js/gadgets/clock.js"></script>
     <script src="../js/gadgets/todo.js"></script>
     <script src="../js/gadgets/calculator.js"></script>
+    <script src="../js/gadgets/lettercount.js"></script>
 </body>
 
 </html>

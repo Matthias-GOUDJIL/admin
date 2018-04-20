@@ -1,11 +1,11 @@
 .content {
+    text-transform: uppercase;
     background-image: url(../../assets/images/learning.jpg);
     background-position: 50% 50%;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
-    text-transform: uppercase;
     .gadget-overlay {
         background-color: rgba(253, 253, 253, 0.774);
         min-height: 100vh;
@@ -27,7 +27,7 @@
                 text-align: center;
                 cursor: pointer;
                 user-select: none;
-            }          
+            }
         }
     }
 }

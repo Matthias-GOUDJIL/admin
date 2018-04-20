@@ -559,13 +559,13 @@ footer .footer-links-container .footer-links {
 }
 
 .content {
+  text-transform: uppercase;
   background-image: url(../../assets/images/learning.jpg);
   background-position: 50% 50%;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
-  text-transform: uppercase;
 }
 
 .content .gadget-overlay {
@@ -610,13 +610,28 @@ footer .footer-links-container .footer-links {
   max-width: 300px !important;
 }
 
-#clock #container p {
+#clock #container #display-day {
   color: #fff;
-  font-size: 3.2rem;
+  font-weight: 300;
+  text-align: center;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+#clock #container #display-clock {
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  font-size: 2.5rem;
 }
 
 #calculator #container {
@@ -768,5 +783,48 @@ footer .footer-links-container .footer-links {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+#lettercount-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#lettercount-form #lettercount-input {
+  font-size: 1.2rem;
+  width: 80%;
+  margin-bottom: 0.8rem;
+  padding: 10px;
+  border: none;
+}
+
+#lettercount-form #lettercount-input:focus {
+  outline: none;
+  -webkit-box-shadow: 3px 3px 0 #3f3d3d;
+          box-shadow: 3px 3px 0 #3f3d3d;
+}
+
+#lettercount-form button {
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1rem;
+  height: 35px;
+  width: 35px;
+  margin: 8px;
+  -webkit-box-shadow: 3px 3px #444343;
+          box-shadow: 3px 3px #444343;
+  text-shadow: 0 0 0.5px #444343;
+}
+
+#lettercount-form button:hover {
+  background-color: #fdfeff;
+  -webkit-box-shadow: 0 0 0 #fff;
+          box-shadow: 0 0 0 #fff;
+}
+
+#count {
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
